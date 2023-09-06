@@ -17,7 +17,7 @@ Router.get("/",(req,res)=>{
 
 });
 
-//get essay by ids
+//get essay by ids - test 3
 Router.get("/:essid",(req,res)=>{
     mysqlConnection.query("SELECT * from ess WHERE essid =?",[req.params.essid], (err, rows, fields)=>{
         if(!err)
