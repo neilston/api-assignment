@@ -17,7 +17,7 @@ Router.get("/",(req,res)=>{
 
 });
 
-//get essay by ids
+//get essay by ids - test 3
 Router.get("/:essid",(req,res)=>{
     mysqlConnection.query("SELECT * from ess WHERE essid =?",[req.params.essid], (err, rows, fields)=>{
         if(!err)
@@ -32,7 +32,7 @@ Router.get("/:essid",(req,res)=>{
 
 });
 
-//get by author name
+//get by author name - made change
 Router.get("/:author",(req,res)=>{
     mysqlConnection.query("SELECT * from ess WHERE author =?",req.params.author, (err, rows, fields)=>{
         if(!err)
